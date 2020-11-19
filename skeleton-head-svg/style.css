@@ -1,0 +1,65 @@
+body{
+    background: black;
+}
+svg{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+#eye,#eye_2{
+    stroke: red;
+    stroke-width: 5;
+    stroke-dasharray: 534;
+    stroke-dashoffset: 0;
+    animation: fillin 1s linear infinite alternate;
+    
+}
+
+#circle{
+    stroke: white;
+    stroke-width: 5;
+    stroke-dasharray: 1507;
+    stroke-dashoffset: 2507;
+    animation: fillin 2s linear infinite alternate;
+    
+}
+#nose{
+    stroke: rgb(8, 247, 207);
+    stroke-width: 5;
+    stroke-dasharray: 434;
+}
+#gap, #gap_2{
+    stroke: white;
+    stroke-width: 5;
+    stroke-dasharray: 289;
+    transform: scale(1);
+    animation: dip 1s linear infinite;
+}
+#sgap, #sgap_2{
+    stroke: red;
+    stroke-width: 5;
+    stroke-dasharray: 78;
+}
+
+@keyframes fillin{
+    0%{
+        stroke-dashoffset: 00;
+        stroke: rgb(255, 37, 37);
+    }
+    20%{
+        stroke-dashoffset: 00;
+        stroke: rgb(6, 253, 233);
+    }
+    40%{
+        stroke-dashoffset: 00;
+        stroke: rgb(233, 11, 11);
+    }
+    60%{
+        stroke-dashoffset: 00;
+        stroke: rgb(37, 255, 244);
+    }
+}
